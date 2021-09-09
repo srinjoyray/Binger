@@ -11,11 +11,11 @@ app.use(express.urlencoded({extended:false}));
 app.use(cors());
 
 app.use('/user',bodyParser,userRoute);
-app.get('/',(req,res)=>{
-    res.json({
-        message: "Welcome"
-    })
-})
+// app.get('/',(req,res)=>{
+//     res.json({
+//         message: "Welcome"
+//     })
+// })
 
 const PORT = process.env.PORT || 5000;
 
