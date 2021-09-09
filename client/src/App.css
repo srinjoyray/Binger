@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.App {
+    min-height: 100vh;
+    background-color: #011337;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 700px) {
+    .app {
+      padding-top: 70px;
+    }
+  }
+  
+
+.pageTitle {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3vw;
+    padding: 4px;
+    border-radius: 50px;
+    color: #b1e6a0;
+}
+  
+@media (max-width: 800px) {
+    .pageTitle {
+      font-size: 5vw;
+    }
+}
+@media (max-width: 420px) {
+  .pageTitle {
+    font-size: 8vw;
+  }
+}

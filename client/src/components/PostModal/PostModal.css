@@ -1,0 +1,99 @@
+.media-modal {
+  display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.PostModal__landscape {
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.PostModal__portrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.tagline {
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  align-self: center;
+  font-style: italic;
+}
+
+.PostModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.PostModal::-webkit-scrollbar {
+  display: none;
+}
+
+.PostModal__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.PostModal__title {
+  height: 12%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.PostModal__description {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.PostModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .PostModal__landscape {
+    display: none;
+  }
+  .PostModal__portrait {
+    display: flex;
+    width: 38%;
+  }
+  .PostModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .PostModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .PostModal__title {
+    font-size: 3.5vw;
+  }
+  .PostModal__description {
+    font-size: 22px;
+  }
+}

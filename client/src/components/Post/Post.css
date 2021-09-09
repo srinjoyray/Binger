@@ -1,0 +1,40 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #7694d1;
+    border-radius: 20px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+  }
+  
+  .media:hover {
+    background-color:  #01019b;
+    color: white;
+  }
+  
+ 
+  .poster {
+    border-radius: 20px;
+    cursor: pointer;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  
+  .subTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    padding: 0 2px;
+  }

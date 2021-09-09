@@ -1,0 +1,9 @@
+.search-bar{
+    display: flex;
+    margin : 15px 0;
+}
+.search{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
