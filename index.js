@@ -5,6 +5,7 @@ const userRoute = require('./routes/user.js');
 const mongoose = require('mongoose');
 const cors = require('cors');
 bodyParser = require('body-parser').json();
+const path = require('path');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
