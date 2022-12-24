@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // const API = axios.create({baseURL:'http://localhost:5000'});
-
-const API = axios.create({baseURL:'https://binger1.herokuapp.com'});
+// const API = axios.create({baseURL:'https://binger1.herokuapp.com'});
+const API = axios.create({baseURL:'https://binger-ec26.onrender.com'});
 
 
 API.interceptors.request.use((req)=>{
